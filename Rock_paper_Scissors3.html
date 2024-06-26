@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Rock_Paper_Scissors_Game.css">
+        <tittle>
+            <h1 class="RPS_title">Rock Paper Scissors Game</h1>
+        </tittle>
+
+    </head>
+    <body>
+        <button title="Rock" class="Rock" onclick="
+            playerDecision =  'ROCK';
+            console.log(computerPlay())
+            console.log(winOrLoose(computerDecision, playerDecision));
+            console.log(calculateScore())">
+            <img class="handIcon" src="fist.png">
+        </button>
+
+        <button title="PAPER" class="PAPER" onclick="
+            playerDecision =  'PAPER';
+            console.log(computerPlay())
+            console.log(winOrLoose(computerDecision, playerDecision))
+            console.log(calculateScore())">
+            <img class="handIcon" src="hand-paper.png">
+        </button>
+
+        <button title="SCISSORS" class="SCISSORS" onclick="
+            playerDecision =  'SCISSORS';
+            console.log(computerPlay())
+            console.log(winOrLoose(computerDecision, playerDecision))
+            console.log(calculateScore())">
+            <img class="handIcon" src="scissors.png">
+        </button>
+
+        <p class="computerMoveDisplay"></p>
+        <p class="computerMoveImage"></p>
+        <p class="playerStatusDisplay"></p>
+        <p class="scoreDisplay"></p>
+
+            <button title="resetScore" class="resetScore" onclick="
+            score.win = 0;
+            score.lose = 0;
+            score.tie = 0;
+            localStorage.removeItem('SCORE');
+            console.log(`SCORE REST 
+            win = ${score.win} lose = ${score.lose} tie = ${score.tie}
+            `);updateSreenScore();">
+            Reset score
+        </button>
+        <script src="Rock_Paper_Scissors_Game.js"></script>
+
+    </body>
+
+
+</html>

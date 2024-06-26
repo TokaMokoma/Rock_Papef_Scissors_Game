@@ -1,0 +1,37 @@
+.handIcon{
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+   
+}
+.Rock{
+    border-radius: 100%;
+    background-color: transparent;
+    margin: 10px;
+}
+.PAPER{
+    border-radius: 100%;
+    background-color: transparent;
+    margin: 10px;
+}
+.SCISSORS{
+    border-radius: 100%;
+    background-color: transparent;
+    margin: 10px;
+}
+.RPS_title{
+    color: blue;
+
+}
+body{
+    background-color: chartreuse;
+    font-weight: bold;
+    color: blue;
+}
+.scoreDisplay{
+    font-size: 20px;
+}
+.RPS_title{
+    font-size: 30px;
+}
